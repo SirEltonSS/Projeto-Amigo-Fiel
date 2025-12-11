@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Fiel - Contato</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="link-logo">
+            <img src="logo.png" alt="Logo Amigo Fiel">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button id="btn-tema" title="Alternar Tema">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-contato">
+
+            <div class="banner-contato">
+                <img src="contato-pet.jpg" alt="Cachorro esperando adoção" width="50%">
+            </div>
+
+            <h2>Entre em Contato</h2>
+            <p>Quer adotar ou ser voluntário? Preencha abaixo:</p>
+
+            <form id="form-completo">
+
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email-contato">E-mail:</label>
+                    <input type="email" id="email-contato" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Whatsapp (Com DDD):</label>
+                    <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" rows="10" placeholder="Conte um pouco sobre você..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Amigo Fiel - Feito por Arthur, Elton, Joab e Augusto.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <button id="btn-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Voltar ao Topo">
+    ⬆️
+</button>
+</body>
+</html>
+
